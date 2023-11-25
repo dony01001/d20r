@@ -6,8 +6,7 @@
 
 .dice {
   text-align: center;
-  display: inline-block;
-
+  
 }
 
 body {
@@ -29,24 +28,11 @@ p {
 }
 
 img {
-  width: 80%;
+  max-width: 80%;
+  z-index: -1000;
   
 }
 
-.number {
-  position: relative;
-  z-index: 1;
-  width: 150px;
-  height: 150px;
-  background: #EEEEEE;
-  
-}
-
-.number p{
-  text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 12rem;
-}
 
 footer {
   margin-top: 5%;

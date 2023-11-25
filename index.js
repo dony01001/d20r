@@ -4,3 +4,5 @@ var randomDiceImage = "img" + randomNumber1 + "Purple.png";
 var randomeImageSource = "images/" + randomDiceImage;
 
 selector1.setAttribute("src", randomeImageSource);
+
+document.querySelector("h1").innerHTML = "You got a " + randomNumber1 + " !";
