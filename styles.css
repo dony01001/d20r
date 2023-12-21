@@ -32,6 +32,10 @@ img {
   z-index: -1000;
   
 }
+.pressed {
+  animation: shake 0.2s;
+  background-color: #EEEEEE;
+}
 
 
 footer {
