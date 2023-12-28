@@ -1,10 +1,12 @@
-var selector1 = document.querySelector(".img1");
 
-document.querySelector(".img1").addEventListener("click", function () {
+
+$(".img1").on("click", function () {
     
-    animationDice();
-    diceNumber();
-    console.log("click");
+    animationDice(); 
+    setTimeout(function () {
+        diceNumber();
+        
+    }, 400); // Retraso 
     
 })
 
@@ -14,19 +16,12 @@ function diceNumber() {
     var randomDiceImage = "img" + randomNumber1 + "Purple.png";
     var randomeImageSource = "images/" + randomDiceImage;
 
-    selector1.setAttribute("src", randomeImageSource);
-    document.querySelector("h1").innerHTML = "You got a " + randomNumber1 + " !";
+    $(".img1").delay(500).attr("src", randomeImageSource);
+    $("h1").HTML = "You got a " + randomNumber1 + " !";
 
 }
 
 function animationDice() {
-    selector1.classList.add("pressed");
-    setTimeout(
-        function(){
-            selector1.classList.remove("pressed");
-        },
-        100
-    )
+   
+      $(".img1").fadeOut().delay(30).fadeIn(); 
 }
-
-
